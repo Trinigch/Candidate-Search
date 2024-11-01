@@ -51,16 +51,25 @@ const showNextCandidate = () => {
         <p>Loading candidate details...</p>
       ) : currentCandidate ? (
         <div className="card">
-          <div className="card-content">
+          
             <img src={currentCandidate.avatar_url} alt={`${currentCandidate.login}'s avatar`} />
-            <p><strong>Name:</strong> {currentCandidate.name || currentCandidate.login}</p>
+            <div className="card-content">
+              <h2>{currentCandidate.name}</h2>
+            <p><strong>Username:</strong> {currentCandidate.login ||'N/A'}</p>
+            <p><strong>Location:</strong> {currentCandidate.location  || 'N/A' }</p>
+            <p><strong>Email:</strong> {currentCandidate.email  || 'N/A' }</p>
+            <p><strong>Company:</strong> {currentCandidate.company || 'N/A'}</p>
+            <p><strong>Id:</strong> {currentCandidate.id || 'N/A'}</p>
+            <p><strong>html_url</strong> {currentCandidate.html_url  || 'N/A'}</p>
           </div>
         </div>
       ) : (
         <p>No more candidates available</p>
       )}
-      <button onClick={SaveCandidate}>Save Candidate</button>
-      <button onClick={showNextCandidate}>Next Candidate</button>
+       <div className="button-container">
+      <button className="button button--save" onClick={SaveCandidate}> + </button>
+      <button className="button button--next" onClick={showNextCandidate}> - </button>
+      </div>
     </div>
     );
   }

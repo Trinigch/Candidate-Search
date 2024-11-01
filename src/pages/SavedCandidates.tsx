@@ -23,6 +23,12 @@ const SavedCandidates = () => {
           <thead>
             <tr>
               <th>Avatar</th>
+              <th>Name</th>
+              <th>Username</th>
+              <th>Location</th>
+              <th>Email</th>
+              <th>Company</th>
+              <th>html_url</th>
             </tr>
           </thead>
           <tbody>
@@ -32,11 +38,11 @@ const SavedCandidates = () => {
                       <img src={candidate.avatar_url} width={50}/>
                     </td>
                     <td>{candidate.name||'N/A'}</td>
-                    <td>
-                      <a href={candidate.html_url} target="_blank" rel="non">
-                        Github Profile
-                      </a>
-                    </td>
+                    <td>{candidate.login||'N/A'}</td>
+                    <td>{candidate.location||'N/A'}</td>
+                    <td>{candidate.email||'N/A'}</td>
+                    <td>{candidate.company||'N/A'}</td>
+                    <td>{candidate.html_url||'N/A'}</td>                  
               </tr>
             ))}
           </tbody>
