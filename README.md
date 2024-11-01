@@ -23,8 +23,13 @@ To start the application, run the followings command:
 ##  screenshot
 
 ## Link to the deployed application
-- [candidate search ](./src/assets/search1.png)
-- [candidate seave ](./src/assets/search2.png)
+
+<p align="center">
+  <img src="./src/assets/search1.png" alt="Candidate Search" width="600"/>
+</p>
+<p align="center">
+  <img src="./src/assets/search2.png" alt="Candidate Save" width="600"/>
+</p>
 ## Credits
 
 Trinidad Peterson - GitHub Username ----- Trinigch
