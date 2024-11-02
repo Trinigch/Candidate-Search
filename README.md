@@ -20,9 +20,12 @@ To start the application, run the followings command:
 -npm run build 
 -npm run start
 
+## Link to the deployed application
+
+https://candidate-search-26hg.onrender.com/
+
 ##  screenshot
 
-## Link to the deployed application
 
 <p align="center">
   <img src="./src/assets/search1.png" alt="Candidate Search" width="600"/>
